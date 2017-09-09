@@ -1,0 +1,173 @@
+@import "https://fonts.googleapis.com/css?family=Anton|Exo|Kaushan+Script|Lobster+Two|Pontano+Sans|Source+Code+Pro";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: sans-serif; }
+
+#carregando,
+#mensagem-sucesso,
+#mensagem-erro {
+  display: none; }
+
+/* HEADER */
+.header {
+  position: relative;
+  background-image: url(imagens/b2g.jpg);
+  background-size: cover;
+  background-position: top;
+  min-height: 500px; }
+
+.titulo {
+  text-align: center;
+  color: #337ab7;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #060303; }
+  .titulo h1 {
+    font-size: 60px;
+    font-family: 'Anton', sans-serif; }
+  .titulo h3 {
+    font-size: 46px;
+    font-family: 'Anton', sans-serif; }
+
+.containerHeader {
+  padding-top: 8%; }
+
+.navigator {
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: 0.5s; }
+  .navigator li {
+    text-decoration: none;
+    padding: 20px;
+    list-style: none;
+    color: #ffffff;
+    transition: 0.5s; }
+    .navigator li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: 'Pontano Sans', sans-serif; }
+      .navigator li a:hover {
+        transition: 0.2s;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #0c40cf; }
+
+.menu-principal {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0px; }
+
+.menu-principalMobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0px; }
+  .menu-principalMobile button {
+    float: right;
+    font-size: 30px;
+    background: 0 0;
+    border: none;
+    padding: 10px;
+    color: white; }
+
+.menu-mobile {
+  display: none; }
+
+/* MENU MOBILE */
+@media (max-width: 700px) {
+  .menu-principalMobile {
+    display: block; }
+
+  .menu-principal {
+    display: none; }
+
+  .menu-mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+    bottom: 0px;
+    margin: 0;
+    font-family: 'Pontano Sans', sans-serif; }
+    .menu-mobile .navigator {
+      display: flex;
+      flex-direction: column;
+      float: right; } }
+/* FIM DO HEADER */
+/* INICIO DO CONTEUDO */
+.item {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  padding: 0; }
+  .item p {
+    margin: 15px; }
+  .item li {
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3; }
+
+.item1 img {
+  display: block;
+  margin: 20px auto; }
+.item1 p {
+  margin-top: 30px; }
+
+.item2 {
+  padding: 0; }
+
+.headerList {
+  background-color: #337ab7;
+  color: white;
+  cursor: pointer; }
+
+.headerList:hover {
+  background-color: #286090; }
+
+abbr {
+  border: none; }
+
+.caret {
+  float: right; }
+
+/* FOOTER */
+.rodape {
+  min-height: 300px;
+  background-color: #337ab7;
+  color: white; }
+  .rodape p {
+    padding-top: 60px; }
+  .rodape h1, .rodape h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif; }
+  .rodape h1 {
+    font-size: 50px; }
+  .rodape h3 {
+    font-size: 36px; }
+
+.footerUnico {
+  margin-top: 20px; }
+
+/* CONTATO */
+.title-contact {
+  font-size: 35px;
+  color: #7f7f7f; }
+
+.form-group-lg textarea.form-control, .form-group-lg select[multiple].form-control {
+  height: 105px; }
+
+.btn-enviar-contact {
+  height: 45px;
+  width: 190px;
+  font-size: 19px; }
+
+/*# sourceMappingURL=style.css.map */
